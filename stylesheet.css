@@ -4,6 +4,7 @@ body{
   width: 100%;
 }
 
+/*colors*/
 :root {
   --orange: hsl(26, 100%, 55%);
   --pale-orange: hsl(25, 100%, 94%);
@@ -13,4 +14,68 @@ body{
   --Light-grayish-blue: hsl(223, 64%, 98%);
   --White: hsl(0, 0%, 100%);
   --Black: hsl(0, 0%, 0%);
+}
+
+/*header*/
+
+header {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--Grayish-blue);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 28rem;
+  position: relative;
+  right: 5rem;
+}
+
+li a {
+  text-decoration: none;
+  color: var(--Grayish-blue);
+}
+
+li a:hover {
+  color: var(--Dark-grayish-blue)
+}
+
+#avatar {
+  height: 3rem;
+  width: 3rem;
+  border: 2px solid transparent;
+  border-radius: 50%;
+}
+
+#avatar:hover {
+  border: 2px solid var(--orange);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#cart {
+  position: relative;
+  left: 5em;
+  opacity: 0.6;
+}
+
+#cart:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.links {
+  padding-bottom: 4rem;
+  text-align: center;
+}
+.links:hover {
+  border-bottom: 3px solid var(--orange);
 }
