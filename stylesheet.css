@@ -98,7 +98,7 @@ main {
   padding-top: 2rem;
   text-align: left;
   padding-right: 2rem;
-  padding-left: 2rem;
+  padding-left: 4rem;
 }
 
 #subGallery {
@@ -110,12 +110,12 @@ main {
 #bigImage {
   width: 90%;
   height: 26rem;
-  padding-bottom: 1.2rem;
+  margin-bottom: 1.2rem;
   border-radius: 1rem;
 }
 
 .smallImage {
-  width: 6rem;
+  width: 22%;
   height: 6rem;
   border-radius: .6rem;
 }
@@ -151,6 +151,8 @@ h3 {
 #originalPrice {
   color: var(--Grayish-blue);
   text-decoration: line-through;
+  position: relative;
+  bottom: 2rem;
 }
 
 /*form*/
@@ -160,6 +162,8 @@ form {
   width: 90%;
   justify-content: space-between;
   height: 3rem;
+  position: relative;
+  bottom: 2rem;
 }
 
 #quantity {
@@ -207,8 +211,31 @@ form {
   width: 60%;
   font-weight: 700;
   border-radius: .6rem;
+  background-image: url(images/icon-cart.svg);
+  background-size: 1rem;
+  background-repeat: no-repeat;
+  background-position: 4rem;
 }
 
 #add:hover {
-  background-color: var(--pale-orange);
+  background-color: var(--orange);
+  opacity: 0.8;
+}
+
+footer {
+  display: flex;
+  justify-content: right;
+  position: relative;
+  right: 2rem;
+  bottom: 1rem;
+  color: var(--Grayish-blue);
+}
+
+footer p a{
+  color: var(--Dark-grayish-blue);
+  text-decoration: none;
+}
+
+footer p a:hover {
+  color: var(--orange);
 }
