@@ -72,6 +72,28 @@ li a:hover {
   opacity: 1;
 }
 
+#emptyCart{
+  position: absolute;
+  right: 8rem;
+  top: 7rem;
+  box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: .4rem;
+  z-index: 10000;
+  background-color: var(--White);
+  visibility: hidden;
+}
+
+#emptyCart h4 {
+  padding-left: 1rem;
+}
+
+#emptyCart p {
+  padding: 4rem 7rem;
+  border-top: 1px solid var(--Grayish-blue);
+  color: var(--Dark-grayish-blue);
+  font-weight: 700;
+}
+
 .links {
   padding-bottom: 4rem;
   text-align: center;
