@@ -112,12 +112,16 @@ main {
   height: 26rem;
   margin-bottom: 1.2rem;
   border-radius: 1rem;
+  max-width: 100%;
+  height: auto;
 }
 
 .smallImage {
   width: 22%;
   height: 6rem;
   border-radius: .6rem;
+  max-width: 100%;
+  height: auto;
 }
 
 /*fonts main*/
@@ -210,17 +214,26 @@ form {
   border: none;
   width: 60%;
   font-weight: 700;
+  font-size: 1rem;
   border-radius: .6rem;
-  background-image: url(images/icon-cart.svg);
-  background-size: 1rem;
-  background-repeat: no-repeat;
-  background-position: 4rem;
+  z-index: 0.5;
+}
+
+#add img {
+  height: 1rem;
+  width: 1rem;
+  position: relative;
+  right: .5rem;
+  filter: brightness(0) invert(1);;
 }
 
 #add:hover {
   background-color: var(--orange);
   opacity: 0.8;
 }
+
+
+/*footer*/
 
 footer {
   display: flex;
